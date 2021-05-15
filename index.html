@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<meta name="title" content="ahSkript Website"/>
+		<meta name="description" content="ahSkript is Ahmad Hayyan's one person company, located in Indonesia. View our project here."/>
+		<meta name="keywords" content="ahskript,ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,c++,python,qt,php,html,css,js,project"/>
+		<meta name="author" content="Ahmad Hayyan"/>
+		
+		<meta property="og:title" content="ahSkript Website"/>
+		<meta property="og:description" content="ahSkript is Ahmad Hayyan's one person company, located in Indonesia. View our project here."/>
+		<meta property="og:keywords" content="ahskript,ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,c++,python,qt,php,html,css,js,project"/>
+		<meta property="og:url" content="https://ahskript.blogspot.com"/>
+		<meta property="og:image" content="https://ahmadhayyan.github.io/res/img/ah_image.jpg"/>
+		
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:title" content="ahSkript Website"/>
+		<meta name="twitter:description" content="ahSkript is Ahmad Hayyan's one person company, located in Indonesia. View our project here."/>
+		<meta name="twitter:url" content="https://ahskript.blogspot.com"/>
+		<meta name="twitter:image" content="https://ahmadhayyan.github.io/res/img/ah_image.jpg"/>
+		
+		<title>ahSkript</title>
+		<style>
+			:root{
+				--primary-color: #f09502;
+				--secondary-color: #fcab28;
+				--content-color: #282a36;
+				--link-color: #e28f83;
+				--bgr-color: #383a59;
+			}
+			::-webkit-scrollbar {
+				width: 10px;
+			}
+			::-webkit-scrollbar-track {
+				background: var(--bgr-color); 
+			}
+			::-webkit-scrollbar-thumb {
+				background: var(--primary-color); 
+			}
+			::-webkit-scrollbar-thumb:hover {
+				background: var(--secondary-color); 
+			}
+			body{
+				margin: 0;
+				font-size: 2em;
+				font-family: 'Calibri';
+				z-index: 1;
+				overflow-x: hidden;
+				background-color: var(--bgr-color);
+				color: #eee;
+			}
+			a{
+				color: #000;
+				text-decoration: none;
+			}
+			a:hover{
+				color: var(--bgr-color);
+			}
+			.content a{
+				color: var(--link-color);
+				text-decoration: none;
+			}
+			.content a:hover{
+				color: var(--secondary-color);
+			}
+			
+			/* ------------------------------------------------- title ------------------------------------------------- */
+			#title{
+				top: 0;
+				padding: 25px 80px;
+				z-index: 11;
+				width: 1056px;
+				background-color: var(--primary-color);
+				margin: 0 auto;
+				border-radius: 0 0 40px 40px;
+			}
+			#ahskript_title{
+				font-family: 'Eras ITC';
+				font-weight: 600;
+			}
+			
+			/* ------------------------------------------------- content ------------------------------------------------- */
+			.content{
+				padding: 50px;
+				position: relative;
+				width: 1056px;
+				margin: 0 auto;
+				background-color: var(--content-color);
+				box-shadow: 0 5px 10px 0 rgba(0,0,0,.15);
+			}
+			.ahskript-logo{
+				width: 500px;
+				height: 480px;
+			}
+			#copyright{
+				font-size: 0.7em;
+				background-color: #f09502;
+				color: rgba(0,0,0,0.6);
+				width: 1076px;
+				padding: 10px 40px;
+				margin: 0 auto;
+			}
+			.footer_link{
+				color: rgba(0,0,0,0.6);
+			}
+			
+			/* ------------------------------------------------- project ------------------------------------------------- */
+			.img1{ background-image: url("https://1.bp.blogspot.com/-mGq_TW5ndic/YAKkuYdisII/AAAAAAAACOQ/Vy7MPkQD_B0EACI0skds9ROwK6bz2lhVgCLcBGAsYHQ/s1056/ahDeck_thumbnail2.png"); }
+			.img__wrap {
+				position: relative;
+				height: 128px;
+				width: auto;
+				transition:all 0.2s ease-in-out;
+			}
+			.img__wrap:hover{
+				height: 328px;
+			}
+			.imgMoreProject{
+				height: 120px !important;
+				width: 1048px !important;
+				margin: 0 !important;
+				border: 4px solid #fff;
+				background-position: center;
+				background-size: cover;
+				cursor: pointer;
+				transition:all 0.2s ease-in-out;
+			}
+			.img__wrap:hover .imgMoreProject{
+				height: 320px !important;
+			}
+			.img__description_layer {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: rgba(40, 42, 54, 0.8);
+				color: #fff;
+				visibility: hidden;
+				opacity: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				transition: opacity .2s, visibility .2s;
+				word-break: break-word;
+			}
+			.img__wrap:hover .img__description_layer {
+				visibility: visible;
+				opacity: 1;
+			}
+			.img__description {
+				transition: .2s;
+				transform: translateY(1em);
+			}
+			.img__wrap:hover .img__description {
+				transform: translateY(0);
+			}
+			
+			/* ------------------------------------------------- mobile ------------------------------------------------- */
+			@media screen and (max-width: 1229px){
+				#title{
+					width: calc( 100% - 160px );
+					border-radius: 0;
+				}
+				.content{
+					width: calc(100% - 100px);
+				}
+				.ahskript-logo {
+					width: 50%;
+					height: 48%;
+				}
+				.imgMoreProject{
+					width: calc( 100% - 8px ) !important;
+				}
+				#copyright{
+					width: calc(100% - 75px);
+				}
+			}
+			@media screen and (max-width: 499px){
+				body{
+					font-size: 0.75em;
+				}
+				#title {
+					padding: 10px;
+					width: calc( 100% - 20px );
+				}
+				#ahskript_title{
+					font-size: 1.5em;
+				}
+				.content {
+					padding: 20px 10px;
+					width: calc(100% - 20px);
+				}
+				#copyright{
+					padding: 7px 10px;
+					width: calc(100% - 20px);
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="top"></div>
+		<div id="title">
+			<a href="/" id="ahskript_title">ahSkript</a>
+		</div>
+		<div class="content">
+			<center><img src="ahSkript_Logo.png" class="ahskript-logo"/></center>
+			<br/><br/>
+			ahSkript is <a href="https://ahmadhayyan.github.io" rel="noopener noreferrer" target="_blank">Ahmad Hayyan</a>'s one person company, located in Indonesia. Our first product is <a href="https://ahdeckstore.com" rel="noopener noreferrer" target="_blank">ahDeck</a>.
+			<br/><br/>
+			<a href="https://ahdeckstore.com" rel="noopener noreferrer" target="_blank">
+				<div class="img__wrap">
+					<img class="imgMoreProject img__img img1">
+					<div class="img__description_layer">
+						<p class="img__description">AHDECK</p>
+					</div>
+				</div>
+			</a>
+			<br/>
+			Reach out <a href="mailto:ahskript9@gmail.com">here</a> for any inquiries.
+		</div>
+		<div id="copyright">Copyright &copy; ahmadhayyan</div>
+		<script>
+			var year = new Date().getFullYear();
+			document.getElementById('copyright').innerHTML = "&copy; "+ year + " <a class='footer_link' href='https://ahmadhayyan.github.io'>ahmadhayyan</a>" + ". All Rights Reserved.";
+		</script>
+	</body>
+</html>
