@@ -11,221 +11,280 @@
 		<meta property="og:title" content="ahSkript Website"/>
 		<meta property="og:description" content="ahSkript is Ahmad Hayyan's one person company, located in Indonesia. View our project here."/>
 		<meta property="og:keywords" content="ahskript,ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,c++,python,qt,php,html,css,js,project"/>
-		<meta property="og:url" content="https://ahskript.blogspot.com"/>
+		<meta property="og:url" content="https://ahskript.thedev.id"/>
 		<meta property="og:image" content="https://ahmadhayyan.github.io/res/img/ah_image.jpg"/>
 		
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:title" content="ahSkript Website"/>
 		<meta name="twitter:description" content="ahSkript is Ahmad Hayyan's one person company, located in Indonesia. View our project here."/>
-		<meta name="twitter:url" content="https://ahskript.blogspot.com"/>
+		<meta name="twitter:url" content="https://ahskript.thedev.id"/>
 		<meta name="twitter:image" content="https://ahmadhayyan.github.io/res/img/ah_image.jpg"/>
 		
 		<title>ahSkript</title>
 		<style>
 			:root{
-				--primary-color: #f09502;
+				--primary-color: #519d9e;
 				--secondary-color: #fcab28;
-				--content-color: #282a36;
-				--link-color: #e28f83;
-				--bgr-color: #383a59;
-			}
-			::-webkit-scrollbar {
-				width: 10px;
-			}
-			::-webkit-scrollbar-track {
-				background: var(--bgr-color); 
-			}
-			::-webkit-scrollbar-thumb {
-				background: var(--primary-color); 
-			}
-			::-webkit-scrollbar-thumb:hover {
-				background: var(--secondary-color); 
+				--bgr-color: #f8f8f8;
+				--title-bgr-color: #151823;
 			}
 			body{
 				margin: 0;
-				font-size: 2em;
+				font-size: 1em;
 				font-family: 'Calibri';
+				font-family: Raleway,Helvetica,"sans-serif";
 				z-index: 1;
 				overflow-x: hidden;
 				background-color: var(--bgr-color);
 				color: #eee;
 			}
 			a{
-				color: #000;
+				color: var(--primary-color);
+				font-weight: bold;
 				text-decoration: none;
 			}
 			a:hover{
-				color: var(--bgr-color);
-			}
-			.content a{
-				color: var(--link-color);
-				text-decoration: none;
-			}
-			.content a:hover{
 				color: var(--secondary-color);
 			}
-			
 			/* ------------------------------------------------- title ------------------------------------------------- */
 			#title{
-				top: 0;
-				padding: 25px 80px;
-				z-index: 11;
-				width: 1056px;
-				background-color: var(--primary-color);
-				margin: 0 auto;
-				border-radius: 0 0 40px 40px;
+				background-color: var(--title-bgr-color);
+				padding: 6em;
+				font-size: 1.3em;
 			}
 			#ahskript_title{
-				font-family: 'Eras ITC';
+				font-size: 3em;
+				font-family: "Eras ITC";
 				font-weight: 600;
 			}
-			
+			#ahskript_subtitle{
+				color: rgba(255,255,255,0.6);
+			}
 			/* ------------------------------------------------- content ------------------------------------------------- */
 			.content{
 				padding: 50px;
 				position: relative;
 				width: 1056px;
 				margin: 0 auto;
-				background-color: var(--content-color);
-				box-shadow: 0 5px 10px 0 rgba(0,0,0,.15);
+				font-size: 1.2em;
+				color: #000;
 			}
-			.ahskript-logo{
-				width: 500px;
-				height: 480px;
-			}
-			#copyright{
-				font-size: 0.7em;
-				background-color: #f09502;
-				color: rgba(0,0,0,0.6);
-				width: 1076px;
-				padding: 10px 40px;
-				margin: 0 auto;
-			}
-			.footer_link{
-				color: rgba(0,0,0,0.6);
-			}
-			
 			/* ------------------------------------------------- project ------------------------------------------------- */
-			.img1{ background-image: url("https://1.bp.blogspot.com/-mGq_TW5ndic/YAKkuYdisII/AAAAAAAACOQ/Vy7MPkQD_B0EACI0skds9ROwK6bz2lhVgCLcBGAsYHQ/s1056/ahDeck_thumbnail2.png"); }
-			.img__wrap {
+			.flex-wrapper {
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				min-height: 300px;
+				background-color: #fff;
+				box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+			}
+			.flex-text {
+				width: 40%;
 				position: relative;
-				height: 128px;
-				width: auto;
-				transition:all 0.2s ease-in-out;
 			}
-			.img__wrap:hover{
-				height: 328px;
+			.flex-text-right {
+				margin: 20px 0 20px 5%;
+				width: 50%;
 			}
-			.imgMoreProject{
-				height: 120px !important;
-				width: 1048px !important;
-				margin: 0 !important;
-				border: 4px solid #fff;
+			.flex-text-right::before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: calc( 100% + 10% );
+				border: .5em solid transparent;
+				border-right-color: #fff;
+				width: 0;
+				height: 0;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+			.project{
+				color: rgba(0,0,0,0.8);
+			}
+			.project-img{
 				background-position: center;
 				background-size: cover;
-				cursor: pointer;
-				transition:all 0.2s ease-in-out;
 			}
-			.img__wrap:hover .imgMoreProject{
-				height: 320px !important;
+			.img-ahdeck{ background-image: url(https://1.bp.blogspot.com/-mGq_TW5ndic/YAKkuYdisII/AAAAAAAACOQ/Vy7MPkQD_B0EACI0skds9ROwK6bz2lhVgCLcBGAsYHQ/s1056/ahDeck_thumbnail2.png); }
+			.project-title{
+				font-size: 2em;
 			}
-			.img__description_layer {
-				position: absolute;
-				top: 0;
+			.project-title::after {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 1px;
+				background-color: rgba(0,0,0,0.3);
+				border-radius: 15px;
+				margin-bottom: -10px;
+			}
+			.tags {
+				font-size: 0.8em;
+				padding: 2px 10px;
+				background: var(--primary-color);
+				border: 0 solid transparent;
+				border-radius: 5px;
+				color: #fafafa;
+			}
+			.project-btn {
 				bottom: 0;
-				left: 0;
 				right: 0;
-				background: rgba(40, 42, 54, 0.8);
-				color: #fff;
-				visibility: hidden;
-				opacity: 0;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				text-align: center;
-				transition: opacity .2s, visibility .2s;
-				word-break: break-word;
+				background-color: var(--primary-color);
+				cursor: pointer;
 			}
-			.img__wrap:hover .img__description_layer {
-				visibility: visible;
-				opacity: 1;
+			.blocky-btn{
+				display: block;
+				position: absolute;
+				border: 3px solid #000;
+				border-radius: 3px;
+				background: var(--primary-color);
+				color: #fafafa;
+				font-weight: bold;
+				cursor: pointer;
+				box-sizing: border-box;
+				transition: transform 0.2s;
+				margin: 8px 6px 10px 6px;
+				padding: 5px 20px;
+				z-index: 1;
+				user-select: none;
+				-webkit-user-select: none;
+				-moz-user-select: none;
 			}
-			.img__description {
-				transition: .2s;
-				transform: translateY(1em);
+			.blocky-btn::before{
+				content: "";
+				background: var(--primary-color);
+				border: 3px solid #000;
+				border-radius: 3px;
+				box-sizing: border-box;
+				position: absolute;
+				top: -3px;
+				left: -3px;
+				height: calc(100% + 6px);
+				width: calc(100% + 6px);
+				z-index: -1;
 			}
-			.img__wrap:hover .img__description {
-				transform: translateY(0);
+			.blocky-btn::after{
+				content: "";
+				display: block;
+				box-sizing: border-box;
+				background: #222;
+				border: 3px solid #000;
+				border-radius: 3px;
+				height: calc(100% + 6px);
+				width: calc(100% + 6px);
+				position: absolute;
+				top: 3px;
+				left: 3px;
+				right: 0;
+				z-index: -2;
+				transition: transform 0.2s;
+			}
+			.blocky-btn:hover{
+				transform: translate(2px, 2px);
+			}
+			.blocky-btn:hover::after{
+				transform: translate(-2px, -3px);
+			}
+			.blocky-github-btn{
+				right: calc( 4em + 55px );
+				padding: 5px 20px 5px 15px;
+			}
+			.blocky-btn-icon{
+				width: 1.1em;
+				height: 1.1em;
+			}
+			.blocky-btn-text{
+				vertical-align: middle;
+			}
+			.arrow-icon{
+				float: right;
+				margin-left: 10px;
+				background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 16 16'%3e%3cpath fill='white' d='M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z'/%3e%3c/svg%3e") 0 0/100% 100% no-repeat;
+			}
+			.github-icon{
+				float: left;
+				margin-right: 10px;
+				background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 16 16'%3e%3cpath fill='white' d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z'/%3e%3c/svg%3e") 0 0/100% 100% no-repeat;
+			}
+			.mail-icon{
+				float: left;
+				margin-right: 10px;
+				background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 16 16'%3e%3cpath fill='white' d='M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z'/%3e%3c/svg%3e") 0 0/100% 100% no-repeat;
 			}
 			
-			/* ------------------------------------------------- mobile ------------------------------------------------- */
-			@media screen and (max-width: 1229px){
-				#title{
-					width: calc( 100% - 160px );
-					border-radius: 0;
-				}
+			/* ------------------------------------------------- responsive ------------------------------------------------- */
+			@media screen and (max-width: 1175px){
 				.content{
 					width: calc(100% - 100px);
 				}
-				.ahskript-logo {
-					width: 50%;
-					height: 48%;
+			}
+			@media screen and (max-width: 860px){
+				.flex-wrapper{
+					display: grid;
 				}
-				.imgMoreProject{
-					width: calc( 100% - 8px ) !important;
+				.flex-text{
+					width: 100%;
+					height: 250px;
 				}
-				#copyright{
-					width: calc(100% - 75px);
+				.flex-text-right{
+					margin: 30px 0 30px 50px;
+					width: calc( 100% - 100px );
+				}
+				.flex-text-right::before{
+					content: unset;
 				}
 			}
 			@media screen and (max-width: 499px){
 				body{
 					font-size: 0.75em;
 				}
-				#title {
-					padding: 10px;
-					width: calc( 100% - 20px );
-				}
-				#ahskript_title{
-					font-size: 1.5em;
-				}
 				.content {
-					padding: 20px 10px;
+					padding: 30px 10px;
 					width: calc(100% - 20px);
 				}
-				#copyright{
-					padding: 7px 10px;
-					width: calc(100% - 20px);
+				.flex-text{
+					height: 200px;
+				}
+				.flex-text-right{
+					margin: 20px 0 20px 10px;
+					width: calc( 100% - 20px );
 				}
 			}
 			
 		</style>
 	</head>
 	<body>
-		<div id="top"></div>
 		<div id="title">
-			<a href="/" id="ahskript_title">ahSkript</a>
+			<text id="ahskript_title">ahSkript</text>
+			<br/>
+			<text id="ahskript_subtitle"><a href="https://ahmadhayyan.github.io" rel="noopener noreferrer" target="_blank">Ahmad Hayyan</a>'s one person company, located in Indonesia.</text>
 		</div>
 		<div class="content">
-			<center><img src="https://1.bp.blogspot.com/-HsNEI1IdTKA/YJ90IPfGWPI/AAAAAAAACTU/ArbBUYnFmi8MrreQUSHqRgRPjFNQ_se7wCLcBGAsYHQ/s2048/ahSkript_Logo.png" class="ahskript-logo"/></center>
-			<br/><br/>
-			ahSkript is <a href="https://ahmadhayyan.github.io" rel="noopener noreferrer" target="_blank">Ahmad Hayyan</a>'s one person company, located in Indonesia. Our first product is <a href="https://ahdeckstore.com" rel="noopener noreferrer" target="_blank">ahDeck</a>.
-			<br/><br/>
-			<a href="https://ahdeckstore.com" rel="noopener noreferrer" target="_blank">
-				<div class="img__wrap">
-					<img class="imgMoreProject img__img img1">
-					<div class="img__description_layer">
-						<p class="img__description">AHDECK</p>
-					</div>
+			<a href="mailto:ahskript9@gmail.com"><span class="blocky-btn">
+				<span class="blocky-btn-icon mail-icon"></span>
+				<text class="blocky-btn-text">Get In Touch</text>
+			</span></a>
+			<br/><br/><br/><br/><br/>
+			
+			<div class="project">
+				<div class="flex-wrapper">
+					<span class="flex-text project-img img-ahdeck"></span>
+					<span class="flex-text flex-text-right">
+						<text class="project-title">ahDeck</text>
+						<text class="tags">Software</text>
+						<text class="tags">Windows</text>
+						<br/><br/>
+						<text class="project-desc">ahDeck is a desktop interface that can open many applications and files more easily and also makes the desktop look cleaner.</text>
+						<a href="https://ahdeckstore.com" rel="noopener noreferrer" target="_blank"><span class="project-btn blocky-btn">
+							<span class="blocky-btn-icon arrow-icon"></span>
+							<text class="blocky-btn-text">View</text>
+						</span></a>
+					</span>
 				</div>
-			</a>
-			<br/>
-			Reach out <a href="mailto:ahskript9@gmail.com">here</a> for any inquiries.
+			</div>
+			
+			<br/><br/><br/><br/>
+			<center style="opacity: 80%;">Check out <a href="https://ahmadhayyan.github.io">this</a> to see my personal projects.</center>
 		</div>
-		<div id="copyright">Copyright &copy; ahmadhayyan</div>
-		<script>
-			var year = new Date().getFullYear();
-			document.getElementById('copyright').innerHTML = "&copy; "+ year + " <a class='footer_link' href='https://ahmadhayyan.github.io'>ahmadhayyan</a>" + ". All Rights Reserved.";
-		</script>
 	</body>
 </html>
