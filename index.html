@@ -4,31 +4,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		
 		<meta name="title" content="ahSkript Website"/>
-		<meta name="description" content="ahSkript is Ahmad Hayyan's one person company, located in Indonesia. View our project here."/>
+		<meta name="description" content="ahSkript is Ahmad Hayyan's one-man-army developer team, located in Indonesia. View our project here."/>
 		<meta name="keywords" content="ahskript,ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,c++,python,qt,php,html,css,js,project"/>
 		<meta name="author" content="Ahmad Hayyan"/>
 		
 		<meta property="og:title" content="ahSkript Website"/>
-		<meta property="og:description" content="ahSkript is Ahmad Hayyan's one person company, located in Indonesia. View our project here."/>
+		<meta property="og:description" content="ahSkript is Ahmad Hayyan's one-man-army developer team, located in Indonesia. View our project here."/>
 		<meta property="og:keywords" content="ahskript,ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,c++,python,qt,php,html,css,js,project"/>
 		<meta property="og:url" content="https://ahskript.thedev.id"/>
 		<meta property="og:image" content="https://ahmadhayyan.github.io/res/img/ah_image.jpg"/>
 		
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:title" content="ahSkript Website"/>
-		<meta name="twitter:description" content="ahSkript is Ahmad Hayyan's one person company, located in Indonesia. View our project here."/>
+		<meta name="twitter:description" content="ahSkript is Ahmad Hayyan's one-man-army developer team, located in Indonesia. View our project here."/>
 		<meta name="twitter:url" content="https://ahskript.thedev.id"/>
 		<meta name="twitter:image" content="https://ahmadhayyan.github.io/res/img/ah_image.jpg"/>
 		
 		<title>ahSkript</title>
 		<style>
-			:root{
+			:root {
 				--primary-color: #519d9e;
 				--secondary-color: #fcab28;
 				--bgr-color: #f8f8f8;
 				--title-bgr-color: #151823;
 			}
-			body{
+			body {
 				margin: 0;
 				font-size: 1em;
 				font-family: 'Calibri';
@@ -38,30 +38,30 @@
 				background-color: var(--bgr-color);
 				color: #eee;
 			}
-			a{
+			a {
 				color: var(--primary-color);
 				font-weight: bold;
 				text-decoration: none;
 			}
-			a:hover{
+			a:hover {
 				color: var(--secondary-color);
 			}
 			/* ------------------------------------------------- title ------------------------------------------------- */
-			#title{
+			#title {
 				background-color: var(--title-bgr-color);
 				padding: 6em;
 				font-size: 1.3em;
 			}
-			#ahskript_title{
+			#ahskript_title {
 				font-size: 3em;
 				font-family: "Eras ITC";
 				font-weight: 600;
 			}
-			#ahskript_subtitle{
+			#ahskript_subtitle {
 				color: rgba(255,255,255,0.6);
 			}
 			/* ------------------------------------------------- content ------------------------------------------------- */
-			.content{
+			.content {
 				padding: 50px;
 				position: relative;
 				width: 1056px;
@@ -86,7 +86,7 @@
 				margin: 20px 0 20px 5%;
 				width: 50%;
 			}
-			.flex-text-right::before{
+			.flex-text-right::before {
 				content: '';
 				position: absolute;
 				top: 50%;
@@ -98,15 +98,17 @@
 				-webkit-transform: translateY(-50%);
 				transform: translateY(-50%);
 			}
-			.project{
+			.project {
 				color: rgba(0,0,0,0.8);
 			}
-			.project-img{
+			.project-img {
 				background-position: center;
 				background-size: cover;
 			}
-			.img-ahdeck{ background-image: url(https://1.bp.blogspot.com/-mGq_TW5ndic/YAKkuYdisII/AAAAAAAACOQ/Vy7MPkQD_B0EACI0skds9ROwK6bz2lhVgCLcBGAsYHQ/s1056/ahDeck_thumbnail2.png); }
-			.project-title{
+			.img-ahdeck {
+				background-image: url(https://1.bp.blogspot.com/-mGq_TW5ndic/YAKkuYdisII/AAAAAAAACOQ/Vy7MPkQD_B0EACI0skds9ROwK6bz2lhVgCLcBGAsYHQ/s1056/ahDeck_thumbnail2.png);
+			}
+			.project-title {
 				font-size: 2em;
 			}
 			.project-title::after {
@@ -126,13 +128,16 @@
 				border-radius: 5px;
 				color: #fafafa;
 			}
+			.button-separator {
+				height: 3.5em;
+			}
 			.project-btn {
 				bottom: 0;
 				right: 0;
 				background-color: var(--primary-color);
 				cursor: pointer;
 			}
-			.blocky-btn{
+			.blocky-btn {
 				display: block;
 				position: absolute;
 				border: 3px solid #000;
@@ -150,7 +155,7 @@
 				-webkit-user-select: none;
 				-moz-user-select: none;
 			}
-			.blocky-btn::before{
+			.blocky-btn::before {
 				content: "";
 				background: var(--primary-color);
 				border: 3px solid #000;
@@ -163,7 +168,7 @@
 				width: calc(100% + 6px);
 				z-index: -1;
 			}
-			.blocky-btn::after{
+			.blocky-btn::after {
 				content: "";
 				display: block;
 				box-sizing: border-box;
@@ -179,73 +184,71 @@
 				z-index: -2;
 				transition: transform 0.2s;
 			}
-			.blocky-btn:hover{
+			.blocky-btn:hover {
 				transform: translate(2px, 2px);
 			}
-			.blocky-btn:hover::after{
+			.blocky-btn:hover::after {
 				transform: translate(-2px, -3px);
 			}
-			.blocky-github-btn{
+			.blocky-github-btn {
 				right: calc( 4em + 55px );
 				padding: 5px 20px 5px 15px;
 			}
-			.blocky-btn-icon{
+			.blocky-btn-icon {
 				width: 1.1em;
 				height: 1.1em;
 			}
-			.blocky-btn-text{
+			.blocky-btn-text {
 				vertical-align: middle;
 			}
-			.arrow-icon{
+			.arrow-icon {
 				float: right;
 				margin-left: 10px;
 				background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 16 16'%3e%3cpath fill='white' d='M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z'/%3e%3c/svg%3e") 0 0/100% 100% no-repeat;
 			}
-			.github-icon{
+			.github-icon {
 				float: left;
 				margin-right: 10px;
 				background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 16 16'%3e%3cpath fill='white' d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z'/%3e%3c/svg%3e") 0 0/100% 100% no-repeat;
 			}
-			.mail-icon{
+			.mail-icon {
 				float: left;
 				margin-right: 10px;
 				background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 16 16'%3e%3cpath fill='white' d='M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z'/%3e%3c/svg%3e") 0 0/100% 100% no-repeat;
 			}
 			
 			/* ------------------------------------------------- responsive ------------------------------------------------- */
-			@media screen and (max-width: 1175px){
-				.content{
+			@media screen and (max-width: 1175px) {
+				.content {
 					width: calc(100% - 100px);
 				}
 			}
-			@media screen and (max-width: 860px){
-				.flex-wrapper{
+			@media screen and (max-width: 860px) {
+				.flex-wrapper {
 					display: grid;
 				}
-				.flex-text{
+				.flex-text {
 					width: 100%;
-					height: 250px;
+					min-height: 13em;
+					height: auto;
 				}
-				.flex-text-right{
+				.flex-text-right {
 					margin: 30px 0 30px 50px;
 					width: calc( 100% - 100px );
 				}
-				.flex-text-right::before{
+				.flex-text-right::before {
 					content: unset;
 				}
 			}
-			@media screen and (max-width: 499px){
-				body{
+			@media screen and (max-width: 499px) {
+				body {
 					font-size: 0.75em;
 				}
 				.content {
 					padding: 30px 10px;
 					width: calc(100% - 20px);
 				}
-				.flex-text{
-					height: 200px;
-				}
-				.flex-text-right{
+				.flex-text-right {
 					margin: 20px 0 20px 10px;
 					width: calc( 100% - 20px );
 				}
@@ -255,14 +258,14 @@
 	</head>
 	<body>
 		<div id="title">
-			<text id="ahskript_title">ahSkript</text>
+			<span id="ahskript_title">ahSkript</span>
 			<br/>
-			<text id="ahskript_subtitle"><a href="https://ahmadhayyan.github.io" rel="noopener noreferrer" target="_blank">Ahmad Hayyan</a>'s one person company, located in Indonesia.</text>
+			<span id="ahskript_subtitle"><a href="https://ahmadhayyan.github.io" rel="noopener noreferrer" target="_blank">Ahmad Hayyan</a>'s one-man-army developer team, located in Indonesia.</span>
 		</div>
 		<div class="content">
 			<a href="mailto:ahskript9@gmail.com"><span class="blocky-btn">
 				<span class="blocky-btn-icon mail-icon"></span>
-				<text class="blocky-btn-text">Get In Touch</text>
+				<span class="blocky-btn-text">Get In Touch</span>
 			</span></a>
 			<br/><br/><br/><br/><br/>
 			
@@ -270,14 +273,15 @@
 				<div class="flex-wrapper">
 					<span class="flex-text project-img img-ahdeck"></span>
 					<span class="flex-text flex-text-right">
-						<text class="project-title">ahDeck</text>
-						<text class="tags">Software</text>
-						<text class="tags">Windows</text>
+						<span class="project-title">ahDeck</span>
+						<span class="tags">Software</span>
+						<span class="tags">Windows</span>
 						<br/><br/>
-						<text class="project-desc">ahDeck is a desktop interface that can open many applications and files more easily and also makes the desktop look cleaner.</text>
+						<span class="project-desc">ahDeck is a desktop application or an interface that can open many applications and files more easily and quickly. It is super fast, easy to use, customizable, and limitless.</span>
+						<div class="button-separator"></div>
 						<a href="https://ahdeckstore.com" rel="noopener noreferrer" target="_blank"><span class="project-btn blocky-btn">
 							<span class="blocky-btn-icon arrow-icon"></span>
-							<text class="blocky-btn-text">View</text>
+							<span class="blocky-btn-text">View</span>
 						</span></a>
 					</span>
 				</div>
