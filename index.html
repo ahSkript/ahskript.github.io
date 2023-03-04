@@ -47,7 +47,7 @@
 				color: var(--secondary-color);
 			}
 			/* ------------------------------------------------- title ------------------------------------------------- */
-			#title {
+			header {
 				background-color: var(--title-bgr-color);
 				padding: 6em;
 				font-size: 1.3em;
@@ -224,6 +224,9 @@
 				}
 			}
 			@media screen and (max-width: 860px) {
+				header {
+					padding: 6em 3em;
+				}
 				.flex-wrapper {
 					display: grid;
 				}
@@ -257,11 +260,11 @@
 		</style>
 	</head>
 	<body>
-		<div id="title">
+		<header>
 			<span id="ahskript_title">ahSkript</span>
 			<br/>
 			<span id="ahskript_subtitle"><a href="https://ahmadhayyan.github.io" rel="noopener noreferrer" target="_blank">Ahmad Hayyan</a>'s one-man-army developer team, located in Indonesia.</span>
-		</div>
+		</header>
 		<div class="content">
 			<a href="mailto:ahskript9@gmail.com"><span class="blocky-btn">
 				<span class="blocky-btn-icon mail-icon"></span>
